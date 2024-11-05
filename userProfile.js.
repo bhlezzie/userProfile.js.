@@ -1,0 +1,27 @@
+# Function to collect user information
+def collect_user_info():
+    user_info = {}
+
+    # Collecting user details
+    user_info['name'] = input("Enter your name: ")
+    user_info['age'] = int(input("Enter your age: "))
+    user_info['email'] = input("Enter your email: ")
+
+    return user_info
+
+# Function to display collected information
+def display_user_info(user_info):
+    print("\nUser Information:")
+    print(f"Name: {user_info['name']}")
+    print(f"Age: {user_info['age']}")
+    print(f"Email: {user_info['email']}")
+
+# Main function to run the code
+def main():
+    user_info = collect_user_info()
+    display_user_info(user_info)
+
+# Running the program
+if __name__ == "__main__":
+    main()
+
